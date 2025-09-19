@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop for Africa 🌍 - Tours & Safaris</title>
+  <style>
+    /* === Global Styles === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* === Header === */
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f9d342;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: #f9d342;
+      padding: 12px 25px;
+      border-radius: 25px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fff;
+      color: #333;
+    }
+
+    /* === Sections === */
+    section {
+      padding: 60px 10%;
+    }
+
+    .about, .tours, .booking, .contact {
+      text-align: center;
+    }
+
+    .about h2, .tours h2, .booking h2, .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .tours-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .tour-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .tour-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .tour-card h3 {
+      padding: 15px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .tour-card p {
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* === Booking Form === */
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    form button {
+      background: #f9d342;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #333;
+      color: #fff;
+    }
+
+    /* === Footer === */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- === Navigation === -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- === Header === -->
+  <header id="home">
+    <h1>Drop for Africa 🌍</h1>
+    <p>Unforgettable Safaris & Tours Across Africa</p>
+    <a href="#booking" class="btn">Book Your Trip</a>
+  </header>
+
+  <!-- === About Section === -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Drop for Africa is a professional tour agency based in Kilifi, Kenya. We provide world-class safari and travel services to tourists across the globe, ensuring unforgettable memories with every trip.</p>
+  </section>
+
+  <!-- === Tours Section === -->
+  <section class="tours" id="tours">
+    <h2>Our Tours</h2>
+    <div class="tours-grid">
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" alt="Safari">
+        <h3>Wild Safari</h3>
+        <p>Experience the Big Five and stunning savannah landscapes in Kenya’s best reserves.</p>
+      </div>
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Beach">
+        <h3>Beach Escape</h3>
+        <p>Relax along the Kenyan coastlines in Kilifi, Diani, and Watamu’s white sandy beaches.</p>
+      </div>
+      <div class="tour-card">
+        <img src="https://images.unsplash.com/photo-1502920514313-52581002a659?auto=format&fit=crop&w=600&q=80" alt="Culture">
+        <h3>Cultural Experience</h3>
+        <p>Discover Africa’s rich traditions, food, and history with guided cultural tours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Booking Section === -->
+  <section class="booking" id="booking">
+    <h2>Book Your Tour</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Tour</option>
+        <option value="Safari">Wild Safari</option>
+        <option value="Beach">Beach Escape</option>
+        <option value="Culture">Cultural Experience</option>
+      </select>
+      <textarea rows="4" placeholder="Special Requests (optional)"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <!-- === Contact Section === -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@dropforafrica.com</p>
+    <p>Phone: +254 700 000 000</p>
+    <p>Location: Kilifi, Kenya</p>
+  </section>
+
+  <!-- === Footer === -->
+  <footer>
+    <p>© 2025 Drop for Africa 🌍 | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Booking form alert
+    document.getElementById('bookingForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for booking with Drop for Africa! We will contact you shortly.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
