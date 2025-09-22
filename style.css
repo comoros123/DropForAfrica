@@ -147,7 +147,8 @@ nav {
 /* === Header === */
 header {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-              url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+              /* url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover; */
+              url('landing.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
   text-align: center;
